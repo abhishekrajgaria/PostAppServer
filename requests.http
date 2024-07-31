@@ -1,0 +1,27 @@
+### Get all posts
+GET http://localhost:8080/posts
+
+### Create a new post
+POST http://localhost:8080/posts
+Content-Type: application/json
+
+{
+  "text": "Hello World 3"
+}
+
+### Get a post by ID
+GET http://localhost:8080/posts/1
+
+### Get posts since a specific time
+GET http://localhost:8080/posts/since/1633017600
+
+### Get posts since a local timestamp
+POST http://localhost:8080/posts/since
+Content-Type: application/json
+
+{
+  "LocalTimeStamp": "2024-07-31T02:28:50"
+}
+
+### Delete a post by ID
+DELETE http://localhost:8080/posts/1
